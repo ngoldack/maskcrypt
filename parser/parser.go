@@ -28,9 +28,6 @@ func NewDefaultParser(reg engine.EngineRegistry, opts ...ParserOption) (*Default
 	if reg == nil {
 		return nil, fmt.Errorf("engine registry is nil")
 	}
-	if len(reg) == 0 {
-		return nil, fmt.Errorf("engine registry is empty")
-	}
 	p := &DefaultParser{
 		schemePrefix: "maskcrypt",
 		reg:          reg,

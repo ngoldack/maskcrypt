@@ -1,7 +1,9 @@
 package maskcryptprocessor
 
-import "go.opentelemetry.io/collector/processor"
+import (
+	"github.com/ngoldack/maskcrypt/config"
+)
 
 type Config struct {
-	processor.Settings `mapstructure:",squash"`
+	config.MaskCryptConfig `mapstructure:",squash"`
 }

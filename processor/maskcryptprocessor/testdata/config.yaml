@@ -1,0 +1,38 @@
+engine:
+  - type: gpg
+    # This public key is for testing purposes only. Do not use it in production.
+    # It has an attached private key with the passphrase "mypassphrase".
+    # It features an attached User-ID: "John Doe", "john.doe@example.com"
+    public_key: |-
+      -----BEGIN PGP PUBLIC KEY BLOCK-----
+      xjMEZ+kt/RYJKwYBBAHaRw8BAQdAfb48FEigIW8rpHv0XzdKYxp1P0etYlRT262H
+      wgaKVeHNH0pvaG4gRG9lIDxqb2huLmRvZUBleGFtcGxlLmNvbT7CvwQTFggAcQWC
+      Z+kt/QMLCQcJENiN0B/KrO8NNRQAAAAAABwAEHNhbHRAbm90YXRpb25zLm9wZW5w
+      Z3Bqcy5vcmep32dkB7LfCDgPRR9sCtdJAhUIAxYAAgIZAQKbAwIeARYhBFxLbXKu
+      PmnSU9thYdiN0B/KrO8NAAAq7wD+JiBEr1KZ9YTm4d0RlEsZYq6DPDFT+nkwD914
+      bK4I9ugBALHbDEUij2YE/B3ASTmM8UcYRce/PVGDIMHtzQoUk98AzjgEZ+kt/RIK
+      KwYBBAGXVQEFAQEHQIWAN8w0G8U3avlfG2Rio+WKac76rfOAQYE8pEvYSQhzAwEK
+      CcKuBBgWCABgBYJn6S39CRDYjdAfyqzvDTUUAAAAAAAcABBzYWx0QG5vdGF0aW9u
+      cy5vcGVucGdwanMub3Jnm6fo2m73CehDHtoyv16LhgKbDBYhBFxLbXKuPmnSU9th
+      YdiN0B/KrO8NAACkLQD/dO94u5y7lvjrfhU4udOC7vS6z2xdrCgSJRbzKkxYEn8B
+      AOnzAt1VVDCrsTglGsd6we0MYdHbepvqBxt7sLMZqFQN
+      =UJEV
+      -----END PGP PUBLIC KEY BLOCK-----
+    private_key: |-
+      -----BEGIN PGP PRIVATE KEY BLOCK-----
+      xVgEZ+kt/RYJKwYBBAHaRw8BAQdAfb48FEigIW8rpHv0XzdKYxp1P0etYlRT262H
+      wgaKVeEAAP93k8TR8NgUy5taA5j1ntclfG32oM51tlSf8NwLVV4jnhMazR9Kb2hu
+      IERvZSA8am9obi5kb2VAZXhhbXBsZS5jb20+wr8EExYIAHEFgmfpLf0DCwkHCRDY
+      jdAfyqzvDTUUAAAAAAAcABBzYWx0QG5vdGF0aW9ucy5vcGVucGdwanMub3Jnqd9n
+      ZAey3wg4D0UfbArXSQIVCAMWAAICGQECmwMCHgEWIQRcS21yrj5p0lPbYWHYjdAf
+      yqzvDQAAKu8A/iYgRK9SmfWE5uHdEZRLGWKugzwxU/p5MA/deGyuCPboAQCx2wxF
+      Io9mBPwdwEk5jPFHGEXHvz1RgyDB7c0KFJPfAMddBGfpLf0SCisGAQQBl1UBBQEB
+      B0CFgDfMNBvFN2r5XxtkYqPlimnO+q3zgEGBPKRL2EkIcwMBCgkAAP9//Iam+I7Q
+      XC50BZ1f+hIuZAMqdiYslQ1SKSyN+W5zUA6Owq4EGBYIAGAFgmfpLf0JENiN0B/K
+      rO8NNRQAAAAAABwAEHNhbHRAbm90YXRpb25zLm9wZW5wZ3Bqcy5vcmebp+jabvcJ
+      6EMe2jK/XouGApsMFiEEXEttcq4+adJT22Fh2I3QH8qs7w0AAKQtAP9073i7nLuW
+      +Ot+FTi504Lu9LrPbF2sKBIlFvMqTFgSfwEA6fMC3VVUMKuxOCUax3rB7Qxh0dt6
+      m+oHG3uwsxmoVA0=
+      =S1C6
+      -----END PGP PRIVATE KEY BLOCK-----
+    passphrase: mypassphrase

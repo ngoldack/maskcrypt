@@ -8,6 +8,8 @@ import (
 )
 
 type PGPEngine struct {
+	id string
+
 	pgp *crypto.PGPHandle
 
 	publicKey  *crypto.Key
@@ -16,11 +18,11 @@ type PGPEngine struct {
 }
 
 // ID implements Engine.
-func (e *PGPEngine) ID() string {
-	return "pgp"
+func (e PGPEngine) ID() string {
+	return e.id
 }
 
-func NewPGPEngine(pubkey, privkey string, passphrase []byte) (*PGPEngine, error) {
+func NewPGPEngine(id, pubkey, privkey string, passphrase []byte) (*PGPEngine, error) {
 	pgp := crypto.PGPWithProfile(profile.Default())
 
 	publicKey, err := crypto.NewKeyFromArmored(pubkey)
@@ -33,9 +35,11 @@ func NewPGPEngine(pubkey, privkey string, passphrase []byte) (*PGPEngine, error)
 	}
 
 	return &PGPEngine{
+		id:         id,
 		pgp:        pgp,
 		publicKey:  publicKey,
 		privateKey: privateKey,
+		passphrase: passphrase,
 	}, nil
 }
 

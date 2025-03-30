@@ -31,7 +31,3 @@ func New(p parser.Parser, opts ...replacerOption) replacerFunc {
 		return a
 	}
 }
-
-var _ = slog.HandlerOptions{
-	ReplaceAttr: New(nil), // ensure that New() returns a replacerFunc
-}

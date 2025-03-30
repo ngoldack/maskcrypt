@@ -27,8 +27,14 @@ func NewPGPTestEngine(t *testing.T) *engine.PGPEngine {
 	privKeyArmor, err := testPrivateKey.Armor()
 	assert.NoError(t, err)
 
-	e, err := engine.NewPGPEngine(pubKeyArmor, privKeyArmor, []byte("passphrase"))
+	passphrase := []byte("passphrase")
+
+	e, err := engine.NewPGPEngine("gpg/test", pubKeyArmor, privKeyArmor, passphrase)
 	assert.NoError(t, err)
+
+	t.Logf("public key: %s", pubKeyArmor)
+	t.Logf("private key: %s", privKeyArmor)
+	t.Logf("passphrase: %s", passphrase)
 
 	return e
 }
